@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, TextInput, StyleSheet} from 'react-native';
-import {windowHeight, windowWidth} from '../utils/Dimentions';
+import {windowHeight, windowWidth} from '../utils/Dimensions';
 
 import AntDesign from 'react-native-vector-icons/AntDesign';
 
@@ -8,14 +8,14 @@ const FormInput = ({labelValue, placeholderText, iconType, ...rest}) => {
   return (
     <View style={styles.inputContainer}>
       <View style={styles.iconStyle}>
-        <AntDesign name={iconType} size={25} color="#666" />
+        <AntDesign name={iconType} size={20} color="#94ADC7" />
       </View>
       <TextInput
         value={labelValue}
         style={styles.input}
         numberOfLines={1}
         placeholder={placeholderText}
-        placeholderTextColor="#666"
+        placeholderTextColor="#94ADC7"
         {...rest}
       />
     </View>
@@ -30,20 +30,20 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     width: '100%',
     height: windowHeight / 15,
-    borderColor: '#ccc',
-    borderRadius: 3,
+    borderColor: '#94ADC7',
+    borderRadius: 12,
     borderWidth: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: '#FCFDFE',
   },
   iconStyle: {
     padding: 10,
     height: '100%',
     justifyContent: 'center',
     alignItems: 'center',
-    borderRightColor: '#ccc',
-    borderRightWidth: 1,
+    borderRightColor: '#94ADC7',
+    borderRightWidth: .5,
     width: 50,
   },
   input: {
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     flex: 1,
     fontSize: 16,
     fontFamily: 'Lato-Regular',
-    color: '#333',
+    color: '#0C0D11',
     justifyContent: 'center',
     alignItems: 'center',
   },
